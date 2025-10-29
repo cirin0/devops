@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nest-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nest-app
+  template:
+    metadata:
+      labels:
+        app: nest-app
+    spec:
+      containers:
+      - name: nest-app
+        image: nest-k8s-demo:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
