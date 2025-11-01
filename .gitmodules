@@ -1,0 +1,6 @@
+[submodule "lab5-ci-cd"]
+	path = lab5-ci-cd
+	url = https://gitlab.com/cirin0/lab5-ci-cd
+[submodule "devops-hrytsiv-lab1"]
+	path = devops-hrytsiv-lab1
+	url = https://gitlab.com/cirin0/devops-hrytsiv
